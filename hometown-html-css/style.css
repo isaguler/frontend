@@ -1,0 +1,126 @@
+body {
+    font-family: 'Spinnaker', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    text-shadow: 0 0 1px black;
+}
+
+#header {
+    background-image: url("images/eskisehir-porsuk.jpg");
+    background-size: 100% 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+#title {
+    background: #78bce4 ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+    color: azure;
+}
+
+#title-info {
+    background: #457B9D;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+    color: azure;
+}
+
+#places-title {
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+.sightseeing {
+    display: flex;
+    flex-direction: column;
+}
+
+.sightseeing-img {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto 10px auto;
+    border-radius: 100%;
+}
+
+#sightseeing-section {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+#sightseeing-places {
+    display: flex;
+    justify-content: space-around;
+}
+
+.place-name {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: cadetblue;
+}
+
+.place-info {
+    width: 350px;
+}
+
+#gif-section {
+    display: flex;
+    margin: 0 5px 0 5px;
+}
+
+.gif-footer {
+    background-image: url("images/time-to-travel.webp");
+    background-size: 100% 100%;
+    width: 400px;
+    height: 400px;
+    margin: 10px auto 0 auto;
+    border-radius: 5px;
+}
+
+#gif-footer-hover {
+    background-image: url("images/left-right-woman.webp");
+    background-size: 100% 100%;
+    width: 400px;
+    height: 400px;
+    margin: 10px auto 0 auto;
+    border-radius: 5px;
+}
+
+#gif-footer-shopping-woman:hover {
+    background-image: url("https://media.giphy.com/media/RLJk7R3mvmawWdjmCq/giphy.gif");
+}
+
+#gif-footer-woman-taking-photo:hover {
+    background-image: url("https://media.giphy.com/media/j5E9vHJSjBcDTXe4E4/giphy.gif");
+}
+
+#guideline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 10px auto;
+    background-color: #98ecaa;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.comment-avatar {
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+#comments-section {
+    display: flex;
+    margin: 5px 0 0 0;
+}
