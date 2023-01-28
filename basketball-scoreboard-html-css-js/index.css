@@ -1,0 +1,67 @@
+body {
+    background: #1B244A;
+    text-align: center;
+    font-family: cursedTimerUlil;
+}
+
+@font-face {
+    font-family: cursedTimerUlil;
+    src: url(CursedTimerULiL.ttf);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    color: #EEEEEE;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.score-panel {
+    background: #080001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    padding: 0;
+    width: 155px;
+    height: 120px;
+    border-radius: 5px;
+    width: auto;
+}
+
+.current-score {
+    color: #F94F6D;
+    font-size: 90px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.incr-btn {
+    color: #9AABD8;
+    background: none;
+    border: 2px solid #9AABD8;
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    font-family: cursedTimerUlil;
+}
+
+#clear-btn {
+    color: #1B244A;
+    background-color: #080001;
+    margin-top: 100px;
+    height: max-content;
+    font-size: xx-large;
+}
+
+#clear-btn:hover {
+    background-color: #F94F6D;
+}
