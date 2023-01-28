@@ -39,7 +39,6 @@ h1 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    
 }
 
 .incr-btn {
@@ -64,4 +63,37 @@ h1 {
 
 #clear-btn:hover {
     background-color: #F94F6D;
+}
+
+.highlighted-text {
+    text-decoration: underline #EEEEEE;
+}
+
+#period-panel {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: #5a6585;
+    color: #dfd110;
+    width: max-content;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: large;
+}
+
+#timer {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    background: none;
+    border: 3px solid #9AABD8;
+    width: 400px;
+    margin: 5px auto;
+    color: #F94F6D;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+#timer-btn {
+    background: #5a6585;
 }
