@@ -1,20 +1,21 @@
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+        <title>password-generator</title>
     </head>
     <body>
         <h1>Generate <span class="green-text">Random Password</span></h1>
         <p>Never use an insecure password again.</p>
-        <div class="seperate-line"></div>
+        <div class="separate-line"></div>
         <div>
             <p id="hint">Choose Password Length Between <span class="green-text">1 - 15</span></p>
-            <input type="number" id="password-length-input" placeholder="Length" min="1" max="15">
+            <label for="password-length-input"></label><input type="number" id="password-length-input" placeholder="Length" min="1" max="15">
         </div>        
         <button id="pass-gen-btn" onclick="generatePassword()">Generate Password</button>
-        <div class="seperate-line"></div>
+        <div class="separate-line"></div>
         <div class="pass-panel">
             <div id="password-text"></div>
             <button id="copy-btn" onclick="copy()">Copy Password</button>

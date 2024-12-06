@@ -4,10 +4,10 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 let passwordEl = document.getElementById("password-text");
 let passwordLengthEl = document.getElementById("password-length-input");
 
-var passwordLength = 15;
+let passwordLength = 15;
 
 function generatePassword() {
-    var randomPassword = "";
+    let randomPassword = "";
 
     if(passwordLengthEl.value != null) {
         passwordLength = passwordLengthEl.value;
@@ -21,11 +21,10 @@ function generatePassword() {
 }
 
 function copy() {
-    var copyText = passwordEl.textContent;
+    const copyText = passwordEl.textContent;
 
     console.log(copyText)
 
-    navigator.clipboard.writeText(copyText);
+    navigator.clipboard.writeText(copyText).then(() => alert("Copied the text: " + copyText));
 
-    alert("Copied the text: " + copyText);
 }

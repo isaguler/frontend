@@ -19,11 +19,11 @@ body {
     align-items: center;
     padding: 9px 17px 9px 15px;
     gap: 12px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
 }
 
-.seperate-line {
+.separate-line {
     border: 1px solid #2F3E53;
     margin: 10px auto;
 }
@@ -44,7 +44,7 @@ body {
     background: azure;
     color: darkgreen;
     padding: 9px 0 9px 15px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
     font-weight: bolder;
     width: 153px;
@@ -59,7 +59,7 @@ body {
     color: azure;
     padding: 9px 17px 9px 15px;
     gap: 12px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
 }
 
