@@ -104,7 +104,7 @@ h1, h2, h3, p {
     background-image: url("https://media.giphy.com/media/j5E9vHJSjBcDTXe4E4/giphy.gif");
 }
 
-#guideline {
+.guideline {
     display: flex;
     justify-content: center;
     align-items: center;
