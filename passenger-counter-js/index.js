@@ -17,6 +17,6 @@ function save() {
     document.getElementById("saved-count").innerText = savedCount.toString();
     previousCountString.textContent += " - " + counter.innerText;
 
-    counter.textContent = 0;
+    counter.textContent = "0";
 }
 
