@@ -27,7 +27,6 @@ h1 {
     align-items: center;
     margin: 25px auto;
     padding: 0;
-    width: 155px;
     height: 120px;
     border-radius: 5px;
     width: auto;
@@ -94,6 +93,6 @@ h1 {
     justify-content: space-between;
 }
 
-#timer-btn {
+.timer-btn {
     background: #5a6585;
 }

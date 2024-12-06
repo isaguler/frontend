@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="index.css">
+        <title>basketball-scoreboard</title>
 
     </head>
     <body>
@@ -10,12 +11,12 @@
             <p id="current-period">0</p>
         </div>
         <div id="timer">
-            <button id="timer-btn" onclick="startChronometer()">START TIMER</button>
+            <button class="timer-btn" onclick="startChronometer()">START TIMER</button>
             <div>
                 <p><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="miliseconds">000</span></p>
-                <button id="timer-btn" onclick="pauseChronometer()">PAUSE TIMER</button>
+                <button class="timer-btn" onclick="pauseChronometer()">PAUSE TIMER</button>
             </div>            
-            <button id="timer-btn" onclick="resetChronometer()">RESET TIMER</button>
+            <button class="timer-btn" onclick="resetChronometer()">RESET TIMER</button>
         </div>
         <div class="hero">
             <div id="home-side">

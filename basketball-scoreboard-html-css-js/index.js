@@ -42,7 +42,7 @@ function highligtScore() {
     if(parseInt(homeScore.textContent) > parseInt(guestScore.textContent)) {
         homeScore.classList.add("highlighted-text");
         guestScore.classList.remove("highlighted-text");
-    } else if(parseInt(homeScore.textContent) == parseInt(guestScore.textContent)) {
+    } else if(parseInt(homeScore.textContent) === parseInt(guestScore.textContent)) {
         homeScore.classList.remove("highlighted-text");
         guestScore.classList.remove("highlighted-text");
     } else if(parseInt(homeScore.textContent) < parseInt(guestScore.textContent)) {
@@ -52,16 +52,16 @@ function highligtScore() {
 }
 
 // timer
-var minutesLabel = document.getElementById("minutes");
-var secondsLabel = document.getElementById("seconds");
-var miliSecondsLabel = document.getElementById("miliseconds");
-var startTime;
-var updatedTime;
-var difference;
-var tInterval;
-var savedTime;
-var paused = 0;
-var running = 0;
+const minutesLabel = document.getElementById("minutes");
+const secondsLabel = document.getElementById("seconds");
+const miliSecondsLabel = document.getElementById("miliseconds");
+let startTime;
+let updatedTime;
+let difference;
+let tInterval;
+let savedTime;
+let paused = 0;
+let running = 0;
 
 function startChronometer() {
     if(!running){
@@ -103,17 +103,17 @@ function getShowTime(){
     } else {
         difference =  updatedTime - startTime;
     }
-    var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((difference % (1000 * 60)) / 1000);
-    var miliSeconds = Math.floor((difference % 1000));
+    let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    let milliseconds = Math.floor((difference % 1000));
 
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
-    miliSeconds = miliSeconds < 100 ? (miliSeconds < 10 ? "00" + miliSeconds : "0" + miliSeconds) : miliSeconds;
+    milliseconds = milliseconds < 100 ? (milliseconds < 10 ? "00" + milliseconds : "0" + milliseconds) : milliseconds;
 
     minutesLabel.innerHTML = minutes;
     secondsLabel.innerHTML = seconds;
-    miliSecondsLabel.innerHTML = miliSeconds;
+    miliSecondsLabel.innerHTML = milliseconds;
 
     changePeriod();
 }
